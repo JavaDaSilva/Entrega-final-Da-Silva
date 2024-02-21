@@ -1,0 +1,135 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Java | Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="shortcut icon" href="recursos/favicon.png" type="image/x-icon">
+    </head>
+    <body>    
+        <!--Header-->
+        <header>
+            <!-- Menú para desktop --> 
+            <div class="menu-desktop">
+                <a href="#">
+                    <img class="logo" src="recursos/logo.png" alt="logo java">
+                </a> 
+                <!-- nav -->
+                <nav class="navbar">
+                    <ul id="listaNav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./paginas/servicios.html">Servicios</a></li>
+                        <li><a href="./paginas/proyectos.html">Proyectos</a></li>
+                        <li><a href="./paginas/sobre-mi.html">Sobre mi</a></li>
+                    </ul>
+                </nav>
+                <a href="./paginas/contacto.html"><button class="primary-button" type="button">Contactame</button></a>
+            </div>
+
+            <!-- Menú hamburguesa para dispositivos móviles --> 
+            <div class="menu-mobile">
+                <a href="#">
+                    <img class="logo-mobile" src="recursos/logo.png" alt="logo java">
+                </a>            
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburguer-icon">&#9776;</label>
+                <nav class="navbar-mobile">
+                    <ul id="listaNavMobile">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./paginas/servicios.html">Servicios</a></li>
+                        <li><a href="./paginas/proyectos.html">Proyectos</a></li>
+                        <li><a href="./paginas/sobre-mi.html">Sobre mi</a></li>
+                    </ul>
+                    <div class="container-button">
+                        <a href="./paginas/contacto.html"><button class="primary-button-mobile" type="button">Contactame</button></a>
+                    </div>
+                </nav> 
+            </div>    
+        </header>
+        
+        <main>
+            <!--Hero-->
+            <section id="hero">
+                <div class="background-image"></div>
+                <div class="hero-content">
+                    <h1 class="title-index"><span class="overline">¡Hola!</span>Soy <span class="title-color">jana Da Silva</span> y soy diseñadora ux/ui</h1>
+                    <a href="./paginas/contacto.html"><button class="primary-button"type="button">Contactame</button></a>
+                </div>
+                <div class="hero-image">
+                    <figure><img src="./recursos/hero_idcard.png" alt="Foto carnet"></figure>
+                </div>  
+            </section> 
+        
+            <!-- section mis servicios -->
+            <section id="servicesSection">
+                <h2>Mis servicios</h2>
+                <p>Descubre cómo mi enfoque en el diseño centrado en el usuario puede crear conexiones significativas entre tu audiencia y tu marca.</p>
+                <div class="service-cards">
+                    <article class="service-card">
+                        <img src="./recursos/uxui-icon.svg" alt="icono de diseño web">
+                        <h5>Diseño UX/UI</h5>
+                    </article>
+                    <article class="service-card">
+                        <img src="./recursos/uxresearch-icon.svg" alt="icono de lupa">
+                        <h5>UX Research</h5>
+                    </article>
+                    <article class="service-card">
+                        <img src="./recursos/code-icon.svg" alt="icono de codigo">
+                        <h5>HTML/CSS</h5>
+                    </article>
+                </div>
+                <a href="./paginas/servicios.html">
+                    <button type="button">Explorar servicios</button>
+                </a>
+            </section>
+
+            <!-- Section úiltimo proyecto -->
+            <section id="lastProject">
+                <div class="title-project">
+                    <h2>Último proyecto</h2>
+                    <a href="./paginas/proyectos.html">Ver más
+                    <img src="./recursos/arrow-right-icon.svg" alt="icono de flecha">
+                    </a>
+                </div>
+                <article class="card-project">
+                    <figure><img src="./recursos/Proyecto-trenes-argentinos.png" alt="Portada de proyecto trenes argentinos"></figure>
+                    <div class="info-project">
+                        <h3>Trenes Argentinos</h3>
+                        <p>Rediseño con el objetivo de mejorar la experiencia de la persona usuaria. Buscamos lograr esto proporcionando información completa y actualizada sobre las rutas, horarios y tarifas. Compra fácil, sencillo y seguro.</p>
+                        <a href="https://www.behance.net/gallery/187979783/UXUI-Case-Study-Trenes-Argentinos-Web" target="_blank">
+                            <button class="secondary-button" type="button">Ver proyecto</button>
+                        </a>
+                    </div>
+                </article>
+            </section>
+        </main>
+            
+        <!--footer-->
+        <footer>
+            <div class="footer-container">
+                <img class="logo" src="./recursos/logo.png" alt="logo java">
+                <div class="links-group">
+                    <h4>Redes Sociales</h4>
+                    <div class="links-container">
+                        <img src="./recursos/behance.svg" alt="icono behance">
+                        <a href="https://www.behance.net/javadasilva" target="_blank">Behance</a>
+                    </div>
+                    <div class="links-container">
+                        <img src="./recursos/linkedin.svg" alt="icono linkedin">
+                        <a href="https://www.linkedin.com/in/-jana-da-silva/" target="_blank">Linkedin</a>
+                    </div>
+                    <div class="links-container">
+                        <img src="./recursos/mensaje.svg" alt="icono correo">
+                        <a href="mailto:javadasilva@hotmail.com" target="_blank">javadasilva@hotmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <p class="copy">Todos los derechos reservados. Copyright © 2024 Jana Da Silva</p>
+        </footer>    
+    </body>
+</html>
