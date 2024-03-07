@@ -1,0 +1,79 @@
+// Button
+.button-style {
+    font-size: 16px;
+    font-family: $fontworksans;
+    color: $color-tipography;
+    padding: 8px 32px;
+    border-radius: 4px;
+    height: 40px;
+    width: 160px;
+}
+
+.primary-button {
+    @extend .button-style;
+    border: none;
+    background-color: $color-primary;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-hover;
+    }
+}
+    
+.secondary-button{
+    @extend .button-style;
+    background-color: transparent;
+    border:2px solid $color-primary;
+    width: 216px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color-background-primary;
+    }
+}
+
+// Card
+
+.card-project{
+    @include flexbox(none, center);
+    align-items: center;
+    gap: 24px;
+
+    @include media-query-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    }
+
+    img{
+        width: 601px;
+        height: 381px;
+
+        @include media-query-mobile{
+        width: 100%; 
+        height: auto; 
+        object-fit: cover;
+        }
+    }
+
+    .info-project{
+        @include flexbox(center, flex-start);
+        flex-direction: column;
+    }
+
+    p{
+        margin-bottom: 24px;
+    }
+}
+
+// Divisor
+hr {
+    border-color: $color-border;
+    margin: 32px 0;
+    @include media-query-mobile{
+        hr {
+            margin: 16px 0;
+        }
+    }
+}

@@ -1,0 +1,95 @@
+#secondaryHero{
+    margin-top: 80px;
+    background-color:$color-background-primary;
+    @include flexbox(center, center);
+    flex-direction: column;
+    padding: 72px 108px;
+    text-align: center;
+    @include media-query-mobile{
+        margin-top: 60px;
+        width: auto;
+        padding: 40px 16px;
+        gap: 16px;
+    }
+
+    p{
+        text-align: center;
+        margin-top: 16px;
+    }
+}
+// Service list
+
+#services{
+    background: $color-background-secondary;
+    padding: 56px 108px;
+    @include media-query-mobile{
+        padding: 40px 16px; 
+    }
+
+    ul{
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .card-content{
+        @include flexbox(none, center);
+        flex-direction: row;
+        gap: 24px;
+
+        @include media-query-mobile{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            gap: 16px; 
+        }
+
+        img{
+            width: 100%;
+            height: 375px;
+            border-radius: 8px;
+            object-fit: cover;
+            object-position: center;
+            order: 2;
+
+            @include media-query-mobile{
+                height: 280px; 
+            }
+        }
+    }
+
+    .card-text{
+        padding: 24px;
+        margin: 0 24px;
+        width: 50%;
+        @include media-query-mobile{
+            padding: 8px 16px;
+            margin: 0;
+            width: 100%; 
+        }
+
+        h3{
+            margin-bottom: 8px;
+        }
+
+        ul {
+            @include tipography($fontworksans, 16px, 500, none, 24px);
+            text-align: start;
+            margin-top: 0;
+            padding-left: 20px;
+            @include media-query-mobile{
+                
+            }
+        }
+    }
+
+    article.card-content.reverse{
+        display: flex;
+        flex-direction: row-reverse;
+        @include media-query-mobile{
+            display: flex;
+            flex-direction: column;  
+        }
+    }
+}

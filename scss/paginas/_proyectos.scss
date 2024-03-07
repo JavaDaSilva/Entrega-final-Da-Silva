@@ -1,0 +1,20 @@
+#myProjects{
+    background-color: $color-background-secondary;
+    padding: 72px 108px;  
+    @include media-query-mobile{
+        padding: 40px 16px;
+    }
+
+    p{
+        margin-bottom: 24px;   
+    }
+
+    .overline{
+        font-family: $fontworksans;
+        font-size: 14px;
+        border-radius: 4px;
+        padding: 4px 0;
+        line-height: 18px;
+    }
+}
+

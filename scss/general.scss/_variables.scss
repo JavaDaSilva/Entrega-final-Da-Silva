@@ -1,0 +1,66 @@
+// Variables-colors
+$color-background-primary:#191919; 
+$color-background-secondary:#272727;
+$color-primary:#1CA7DA;
+$color-hover: #1eBaf3;
+$color-tipography:#f1f1f1;
+$color-border: #535353;
+
+// Mixins
+@mixin tipography($ff, $fs, $fw, $tt, $lh) {
+    color: $color-tipography;
+    font-family: $ff;
+    font-size: $fs;
+    font-weight: $fw;
+    text-transform: $tt;
+    line-height: $lh;
+    
+}
+
+@mixin flexbox($jc, $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin media-query-mobile {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+// variables tipography
+$fontworksans:'Work Sans', sans-serif;
+$fontkanit:'kanit' , sans-serif;
+h1{ @include tipography ($fontkanit, 64px, 500, uppercase, 72px)}
+h2{ @include tipography ($fontkanit, 40px, 500, none, 48px)}
+h3{ @include tipography ($fontkanit, 32px, 600, none, 48px)}
+h4{ @include tipography ($fontkanit, 24px, 700, none, 32px)}
+p{ @include tipography ($fontworksans, 16px, 500, none, 24px)}
+
+span.title-color{
+    color:$color-primary;
+}
+
+span.overline{
+    font-family: $fontworksans;
+    font-size: 18px;
+    line-height: 22px;
+    display: block;
+    @include media-query-mobile{
+        line-height: 40px; 
+    }
+}
+
+// variables tipography mobile
+@include media-query-mobile{
+    h1{ @include tipography ($fontkanit, 42px, 500, uppercase, 40px)}
+    h2{ @include tipography ($fontkanit, 32px, 500, none, 48px)}
+    h3{ @include tipography ($fontkanit, 24px, 600, none, 32px)}
+    h4{ @include tipography ($fontkanit, 18px, 700, none, 32px)}
+    p{ @include tipography ($fontworksans, 16px, 500, none, 24px)}
+}
+
+
+
+

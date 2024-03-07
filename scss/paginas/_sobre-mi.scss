@@ -1,0 +1,50 @@
+#aboutMe{
+    margin-top: 80px;
+    background-color: $color-background-secondary;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 108px;
+    height: 600px;
+    @include media-query-mobile{
+        margin-top:59px;
+        flex-direction: column;
+        height: auto;
+        padding: 40px 16px;  
+    }
+
+    .about-me-text{
+        width: 50%;
+
+        p{
+            margin: 32px 0;
+        }  
+
+        @include media-query-mobile{
+            width: 100%;
+            line-height: 32px
+        }
+    }
+
+    .about-me-figure{
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        max-width: 100%;
+
+        @include media-query-mobile {
+            width: 100%;
+            height: auto;
+            margin-top: 40px;
+            column-gap: 8px;
+            box-sizing: border-box;
+            
+            img{
+                width: 160px;
+            }
+        }
+    }
+}
