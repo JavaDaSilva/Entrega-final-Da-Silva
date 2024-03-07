@@ -464,7 +464,7 @@ header .primary-button:hover {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: url("../../recursos/lines.svg") center/cover no-repeat;
+  background: url("../recursos/lines.svg") center/cover no-repeat;
   transition: opacity 0.2s ease;
 }
 #hero .background-image:hover {
