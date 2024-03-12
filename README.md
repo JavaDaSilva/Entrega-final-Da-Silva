@@ -11,4 +11,4 @@ Si tienes alguna idea para mejorar este proyecto, por favor abre un issue o env√
 ## Autor
 - Nombre: M. Jana Da Silva
 - Linkedin: https://www.linkedin.com/in/-jana-da-silva/
-- Behance: [https://www.linkedin.com/in/-jana-da-silva/](https://www.behance.net/javadasilva)
+- Behance: https://www.behance.net/javadasilva

@@ -1,0 +1,265 @@
+header {
+    .menu-desktop {
+        @include flexbox(space-between, center);
+        background-color: $color-background-primary;
+        border-bottom: 1px solid $color-border;
+        padding: 16px 108px;
+        box-sizing: border-box;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 1000;
+
+        .primary-button {
+            @extend .button-style;
+            border: none;
+            background-color: $color-primary;
+
+            &:hover {
+                background-color: $color-hover;
+            }
+        }
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+    .logo {
+        width: 133px;
+        height: 47px;
+    }
+
+    .navbar-mobile {
+        display: none;
+    }
+
+    #listaNav li {
+        display: inline-block;
+        margin-right: 24px;
+        border-bottom: 3px solid transparent;
+        box-sizing: border-box;
+
+        &:hover {
+            border-bottom: 3px solid $color-primary;
+        }
+    }
+
+    nav a {
+        color: $color-tipography;
+        text-decoration: none;
+        font-family: Kanit;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    @include media-query-mobile {
+        .menu-desktop {
+            display: none;
+        }
+
+        .menu-mobile {
+            display: block;
+            @include flexbox(space-between, center);
+            border-bottom: 1px solid $color-border;
+            background-color: $color-background-primary;
+            padding: 8px 16px;
+            width: 100%;
+            box-sizing: border-box;
+            position: fixed;
+            z-index: 1000;
+
+            .primary-button-mobile {
+                font-size: 16px;
+                font-family: $fontworksans;
+                color: $color-tipography;
+                background-color:$color-primary;
+                padding: 8px 32px;
+                border-radius: 4px;
+                height: 40px;
+                width: 160px;
+                border: none;
+            }
+        }
+
+        #menuToggle {
+            display: none;
+        }
+
+        img.logo-mobile {
+            width: 85px;
+            height: 30px;
+        }
+
+        .hamburguer-icon {
+            display: block;
+            color: $color-tipography;
+            font-size: 32px;
+        }
+
+        #menuToggle:checked + .hamburguer-icon + .navbar-mobile {
+            display: block;
+        }
+
+        .navbar-mobile {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            background-color: $color-background-primary;
+            margin-top: 59px;
+            z-index: 100;
+            box-sizing: border-box;
+            position: fixed;
+            height: 100vh;
+        }
+
+        #listaNavMobile {
+            @include flexbox(none, center);
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin-top: 16px;
+        }
+
+        .container-button {
+            @include flexbox(none, center);
+            justify-content: center;
+        }
+
+        .navbar-mobile ul {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                margin-bottom: 16px;
+                padding: 16px;
+        }
+
+        a {
+            color:$color-tipography;
+            text-decoration: none;
+            font-family: $fontworksans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        }
+
+        .navbar {
+            display: none;
+        }
+
+        header .primary-button {
+            display: none;
+        }
+    }
+
+    @include media-query-tablet {
+        .menu-desktop {
+            display: none;
+        }
+
+        .menu-mobile {
+            display: block;
+            @include flexbox(space-between, center);
+            border-bottom: 1px solid $color-border;
+            background-color: $color-background-primary;
+            padding: 8px 16px;
+            width: 100%;
+            box-sizing: border-box;
+            position: fixed;
+            z-index: 1000;
+
+            .primary-button-mobile {
+                font-size: 16px;
+                font-family: $fontworksans;
+                color: $color-tipography;
+                background-color:$color-primary;
+                padding: 8px 32px;
+                border-radius: 4px;
+                height: 40px;
+                width: 160px;
+                border: none;
+            }
+        }
+
+        #menuToggle {
+            display: none;
+        }
+
+        .hamburguer-icon {
+            display: block;
+            color: $color-tipography;
+            font-size: 32px;
+        }
+
+        #menuToggle:checked + .hamburguer-icon + .navbar-mobile {
+            display: block;
+        }
+
+        .navbar-mobile {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            background-color: $color-background-primary;
+            margin-top: 59px;
+            z-index: 100;
+            box-sizing: border-box;
+            position: fixed;
+            height: 100vh;
+        }
+
+        #listaNavMobile {
+            @include flexbox(none, center);
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin-top: 16px;
+        }
+
+        .container-button {
+            @include flexbox(none, center);
+            justify-content: center;
+        }
+
+        .navbar-mobile ul {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                margin-bottom: 16px;
+                padding: 16px;
+        }
+
+        a {
+            color:$color-tipography;
+            text-decoration: none;
+            font-family: $fontworksans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        }
+
+        .navbar {
+            display: none;
+        }
+
+        header .primary-button {
+            display: none;
+        }
+    }
+
+}

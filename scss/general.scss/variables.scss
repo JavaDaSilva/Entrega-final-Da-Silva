@@ -29,6 +29,12 @@ $color-border: #535353;
     }
 }
 
+@mixin media-query-tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
 // variables tipography
 $fontworksans:'Work Sans', sans-serif;
 $fontkanit:'kanit' , sans-serif;

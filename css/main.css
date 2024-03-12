@@ -148,7 +148,7 @@ footer {
   }
 }
 
-.button-style, header .primary-button, .secondary-button, .primary-button {
+.button-style, header .menu-desktop .primary-button, .secondary-button, .primary-button {
   font-size: 16px;
   font-family: "Work Sans", sans-serif;
   color: #f1f1f1;
@@ -309,6 +309,13 @@ header .menu-desktop {
   position: fixed;
   z-index: 1000;
 }
+header .menu-desktop .primary-button {
+  border: none;
+  background-color: #1CA7DA;
+}
+header .menu-desktop .primary-button:hover {
+  background-color: #1eBaf3;
+}
 header .menu-mobile {
   display: none;
 }
@@ -336,13 +343,6 @@ header nav a {
   font-style: normal;
   font-weight: 500;
 }
-header .primary-button {
-  border: none;
-  background-color: #1CA7DA;
-}
-header .primary-button:hover {
-  background-color: #1eBaf3;
-}
 @media (max-width: 480px) {
   header .menu-desktop {
     display: none;
@@ -359,6 +359,17 @@ header .primary-button:hover {
     box-sizing: border-box;
     position: fixed;
     z-index: 1000;
+  }
+  header .menu-mobile .primary-button-mobile {
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+    color: #f1f1f1;
+    background-color: #1CA7DA;
+    padding: 8px 32px;
+    border-radius: 4px;
+    height: 40px;
+    width: 160px;
+    border: none;
   }
   header #menuToggle {
     display: none;
@@ -409,11 +420,11 @@ header .primary-button:hover {
     list-style: none;
     padding-left: 0;
   }
-  header .navbar-mobile li {
+  header .navbar-mobile ul li {
     margin-bottom: 16px;
     padding: 16px;
   }
-  header .navbar-mobile a {
+  header .navbar-mobile ul a {
     color: #f1f1f1;
     text-decoration: none;
     font-family: "Work Sans", sans-serif;
@@ -424,7 +435,28 @@ header .primary-button:hover {
   header .navbar {
     display: none;
   }
-  header .primary-button-mobile {
+  header header .primary-button {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header .menu-desktop {
+    display: none;
+  }
+  header .menu-mobile {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #535353;
+    background-color: #191919;
+    padding: 8px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1000;
+  }
+  header .menu-mobile .primary-button-mobile {
     font-size: 16px;
     font-family: "Work Sans", sans-serif;
     color: #f1f1f1;
@@ -434,6 +466,66 @@ header .primary-button:hover {
     height: 40px;
     width: 160px;
     border: none;
+  }
+  header #menuToggle {
+    display: none;
+  }
+  header .hamburguer-icon {
+    display: block;
+    color: #f1f1f1;
+    font-size: 32px;
+  }
+  header #menuToggle:checked + .hamburguer-icon + .navbar-mobile {
+    display: block;
+  }
+  header .navbar-mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #191919;
+    margin-top: 59px;
+    z-index: 100;
+    box-sizing: border-box;
+    position: fixed;
+    height: 100vh;
+  }
+  header #listaNavMobile {
+    display: flex;
+    justify-content: none;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+  }
+  header .container-button {
+    display: flex;
+    justify-content: none;
+    align-items: center;
+    justify-content: center;
+  }
+  header .navbar-mobile ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  header .navbar-mobile ul li {
+    margin-bottom: 16px;
+    padding: 16px;
+  }
+  header .navbar-mobile ul a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+  }
+  header .navbar {
+    display: none;
   }
   header header .primary-button {
     display: none;
