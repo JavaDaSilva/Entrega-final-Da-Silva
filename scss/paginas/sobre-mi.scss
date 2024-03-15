@@ -1,16 +1,21 @@
 #aboutMe{
     margin-top: 80px;
     background-color: $color-background-secondary;
-    display: flex;
+    @include flexbox (center, center);
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 72px 108px;
-    height: 600px;
-    @include media-query-mobile{
-        margin-top:59px;
+    height: 53vh;
+    gap: 32px;
+
+    @include media-query-tablet{
+        padding: 56px 60px;
         flex-direction: column;
         height: auto;
+        gap: 32px;
+    }
+
+    @include media-query-mobile{
+        margin-top:59px;
         padding: 40px 16px;  
     }
 
@@ -18,21 +23,21 @@
         width: 50%;
 
         p{
-            margin: 32px 0;
+            margin: 16px 0;
         }  
 
-        @include media-query-mobile{
+        @include media-query-tablet{
             width: 100%;
+        }
+
+        @include media-query-mobile{
             line-height: 32px
         }
     }
 
     .about-me-figure{
-        display: flex;
+        @include flexbox (center, center);
         gap: 24px;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
         max-width: 100%;
 
         @include media-query-mobile {

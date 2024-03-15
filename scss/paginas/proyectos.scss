@@ -1,20 +1,42 @@
-#myProjects{
+.container-fluid{
     background-color: $color-background-secondary;
-    padding: 72px 108px;  
-    @include media-query-mobile{
-        padding: 40px 16px;
+    padding: 72px 108px;
+
+    .card{
+        background-color: $color-background-secondary;
+        border-color: $color-border;
+        border-radius: 18px;
     }
 
-    p{
-        margin-bottom: 24px;   
-    }
-
-    .overline{
+    .btn-primary{
+        font-size: 16px;
         font-family: $fontworksans;
-        font-size: 14px;
+        color: $color-tipography;
+        background-color:$color-primary;
         border-radius: 4px;
-        padding: 4px 0;
-        line-height: 18px;
+        height: 40px;
+        width: 160px;
+        border: none;
+    }
+
+    .accordion-item{
+        background-color: $color-background-secondary;
+        border-color: $color-border;
+    }
+
+    .accordion-button {
+        background-color: $color-background-primary;
+        color: $color-tipography;
+    
+        &::after {
+            background-color: $color-tipography;
+            border-radius: 2px;
+        }
+    }
+
+    .accordion-body{
+        font-size: 16px;
+        font-family: $fontworksans;
+        color: $color-tipography;
     }
 }
-

@@ -9,12 +9,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
-        <!-- CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/main.css">
         <link rel="shortcut icon" href="../recursos/favicon.png" type="image/x-icon">
     </head>
     <body>
-        <!--Header-->
         <header>
             <!-- Menú para desktop --> 
             <div class="menu-desktop">
@@ -58,54 +57,102 @@
                 <h1><span class="overline">proyectos</span>casos <span class="title-color">de estudio</span></h1>
                 <p>Cada proyecto es una historia, desde la concepción de la idea hasta la creación de experiencias digitales memorables. Estos son algunos de mis casos de estudio que destacan mi enfoque en Diseño UX/UI.</p>
             </section>
-            <!-- Project list -->
-            <section id="myProjects">
-                <article class="card-project">
-                    <figure><img src="../recursos/Proyecto-trenes-argentinos.png" alt="Cover trenes argentinos"></figure>
-                    <div>
-                        <h3><span class="overline">UX/UI Avanzado</span>Trenes Argentinos</h3>
-                        <p>Rediseño con el objetivo de mejorar la experiencia de la persona usuaria. Buscamos lograr esto proporcionando información completa y actualizada sobre las rutas, horarios y tarifas. Compra fácil, sencillo y seguro.</p>
-                        <a href="https://www.behance.net/gallery/187979783/UXUI-Case-Study-Trenes-Argentinos-Web" target="_blank">
-                            <button class="secondary-button" type="button">Ver proyecto</button>
-                        </a>
+            <!-- Cards-Bootrstrap -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 mt-3">
+                        <div class="card h-100" style="width: 100%;">
+                            <img src="../recursos/Proyecto-trenes-argentinos.png" class="card-img-top" alt="Cover trenes argentinos">
+                            <div class="card-body">
+                              <h5 class="card-title">Proyecto Trenes Argentinos</h5>
+                              <p class="card-text">Rediseño con el objetivo de mejorar la experiencia de la persona usuaria. Buscamos lograr esto proporcionando información completa y actualizada sobre las rutas, horarios y tarifas.</p>
+                              <a href="https://www.behance.net/gallery/187979783/UXUI-Case-Study-Trenes-Argentinos-Web" target="_blank" class="btn btn-primary">Ver proyecto</a>
+                            </div>
+                          </div>
                     </div>
-                </article>
-                <hr>
-                <article class="card-project">
-                    <figure><img src="../recursos/Proyecto-my-valentine.png" alt="cover my valentine"></figure>
-                    <div>
-                        <h3><span class="overline">UX Writing</span>My Valentine</h3>
-                        <p>El lugar donde puedes conectarte auténticamente, encontrar a esa persona especial y sentirte orgulloso de ser tú mismo.¡Únete y cambia la manera en que te relacionas con el amor!</p>
-                        <a href="https://www.behance.net/gallery/183889791/UX-Writing-Case-study-My-Valentine" target="_blank">
-                            <button class="secondary-button" type="button">Ver proyecto</button>
-                        </a>
+                    <div class="col-sm-12 col-md-6 mt-3">
+                        <div class="card h-100" style="width: 100%;">
+                            <img src="../recursos/Proyecto-my-valentine.png" class="card-img-top" alt="cover my valentine">
+                            <div class="card-body">
+                              <h5 class="card-title">Proyecto My Valentine</h5>
+                              <p class="card-text">El lugar donde puedes conectarte auténticamente, encontrar a esa persona especial y sentirte orgulloso de ser tú mismo.¡Únete y cambia la manera en que te relacionas con el amor!</p>
+                              <a href="https://www.behance.net/gallery/183889791/UX-Writing-Case-study-My-Valentine" target="_blank" class="btn btn-primary">Ver proyecto</a>
+                            </div>
+                          </div>
                     </div>
-                </article>
-                <hr>
-                <article class="card-project">
-                    <figure><img src="../recursos/Proyecto-Tuenti-Argentina.png" alt="imagen de empresa tuenti"></figure>
-                    <div>
-                        <h3><span class="overline">UX Research</span>Tuenti Argentina</h3>
-                        <p>Decidí sumergirme en la investigación de Tuenti para entender cómo hacer que tu experiencia sea genial. Acompáñame en este camino para mejorar juntos esta app.</p>
-                        <a href="https://www.behance.net/gallery/178721645/UX-Research-Case-study-Tuenti-Argentina" target="_blank">
-                            <button class="secondary-button" type="button">Ver proyecto</button>
-                        </a>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 mt-3">
+                        <div class="card h-100" style="width: 100%;">
+                            <img src="../recursos/Proyecto-Tuenti-Argentina.png" class="card-img-top" alt="imagen de empresa tuenti">
+                            <div class="card-body">
+                              <h5 class="card-title">Proyecto Tuenti Argentina</h5>
+                              <p class="card-text">Decidí sumergirme en la investigación de Tuenti para entender cómo hacer que tu experiencia sea genial. Acompáñame en este camino para mejorar juntos esta app.</p>
+                              <a href="https://www.behance.net/gallery/178721645/UX-Research-Case-study-Tuenti-Argentina" target="_blank" class="btn btn-primary">Ver proyecto</a>
+                            </div>
+                          </div>
                     </div>
-                </article>
-                <hr>
-                <article class="card-project">
-                    <figure><img src="../recursos/Proyecto-Quickbite.png" alt="Cover de proyecto quickbites"></figure>
-                    <div>
-                        <h3><span class="overline">UX/UI</span>Quickbite</h3>
-                        <p>Con Quickbite, nuestra innovadora aplicación en español de recetas de cocina, encontrarás soluciones rápidas y deliciosas en un instante.</p>
-                        <a href="https://www.behance.net/gallery/173860343/UXUI-Case-Study-Quickbite-App" target="_blank">
-                            <button class="secondary-button" type="button">Ver proyecto</button>
-                        </a>
+                    <div class="col-sm-12 col-md-6 mt-3">
+                        <div class="card h-100" style="width: 100%;">
+                            <img src="../recursos/Proyecto-Quickbite.png" class="card-img-top" alt="Cover de proyecto quickbites">
+                            <div class="card-body">
+                              <h5 class="card-title">Proyecto Quickbite</h5>
+                              <p class="card-text">Con Quickbite, nuestra innovadora aplicación en español de recetas de cocina, encontrarás soluciones rápidas y deliciosas en un instante.</p>
+                              <a href="https://www.behance.net/gallery/173860343/UXUI-Case-Study-Quickbite-App" target="_blank" class="btn btn-primary">Ver proyecto</a>
+                            </div>
+                          </div>
                     </div>
-                </article>
-            </section>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <h3>Sobre mis proyectos</h3>
+                    </div>
+                </div>
+                <!-- Accordeon-Bootstrap -->
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button"& type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  ¿Dónde realice los proyectos?
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <strong>Realicé mis proyectos de UX/UI en Coderhouse,</strong>  una plataforma educativa online especializada en áreas tecnológicas. Allí, completé los cursos de UX/UI básico, UX/UI avanzado, UX research, UX writing y Desarrollo web.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  ¿Qué me motivó a hacerlo?
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <strong>Proveniente de una sólida trayectoria de 10 años en atención al cliente,</strong>  dirigí mi pasión hacia un nuevo horizonte: la especialización en UX/UI. Esta decisión nace de mi anhelo por aprovechar mi habilidad para entender las necesidades de las personas y traducirlas en soluciones tangibles. Transformar esa pasión en la creación de experiencias digitales excepcionales, desde la etapa conceptual hasta la implementación final.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  ¿Qué aprendí en el recorrido?
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  <strong>Habilidades técnicas y blandas.</strong> No solo aprendi diseño de interfaz,investigación de usuarios, escritura ux y herramientas de diseño.Tambien adquiri pensamiento crítico, comunicacion entre compañeros y gestion de tiempos para cumplir los plazos pautados.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>                    
+                </div>
+            </div>
         </main>
-        <!--footer-->
         <footer>
             <div class="footer-container">
                 <img class="logo" src="../recursos/logo.png" alt="logo java">
@@ -127,6 +174,7 @@
             </div>
             <hr />
             <p class="copy">Todos los derechos reservados. Copyright © 2024 Jana Da Silva</p>
-        </footer>    
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>      
     </body>
 </html>

@@ -17,11 +17,14 @@
         margin-top: 16px;
     }
 }
-// Service list
-
 #services{
     background: $color-background-secondary;
     padding: 56px 108px;
+
+    @include media-query-tablet{
+        padding: 56px 60px;
+    }
+
     @include media-query-mobile{
         padding: 40px 16px; 
     }
@@ -36,7 +39,11 @@
     .card-content{
         @include flexbox(none, center);
         flex-direction: row;
-        gap: 24px;
+        gap: 16px;
+
+        @include media-query-tablet{
+            gap: 16px;
+        }
 
         @include media-query-mobile{
             display: flex;
@@ -53,16 +60,26 @@
             object-position: center;
             order: 2;
 
+            @include media-query-tablet{
+               width: 100%; 
+               object-fit: contain;
+            }
+
             @include media-query-mobile{
-                height: 280px; 
+                height: 240px;
             }
         }
     }
 
     .card-text{
-        padding: 24px;
-        margin: 0 24px;
-        width: 50%;
+        padding: 24px;    
+        width: 70%;
+
+        @include media-query-tablet{
+            padding: 16px;
+            width: 100%;
+         }
+
         @include media-query-mobile{
             padding: 8px 16px;
             margin: 0;
@@ -78,9 +95,6 @@
             text-align: start;
             margin-top: 0;
             padding-left: 20px;
-            @include media-query-mobile{
-                
-            }
         }
     }
 

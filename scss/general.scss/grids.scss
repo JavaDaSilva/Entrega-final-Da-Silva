@@ -9,21 +9,18 @@ body{
         grid-column-gap: 0px;
     }        
 }    
-
 header{
     grid-column:1/13;
     @include media-query-mobile {
         grid-column:1/5;  
     }    
 }
-
 main{
     grid-column: 1/13;
     @include media-query-mobile {
         grid-column: 1/5;
     }    
 }
-
 footer{
     grid-column: 1/13;
     background:$color-background-primary;

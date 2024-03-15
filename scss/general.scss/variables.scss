@@ -58,7 +58,7 @@ span.overline{
     }
 }
 
-// variables tipography mobile
+// variables tipography mobile and tablet
 @include media-query-mobile{
     h1{ @include tipography ($fontkanit, 42px, 500, uppercase, 40px)}
     h2{ @include tipography ($fontkanit, 32px, 500, none, 48px)}

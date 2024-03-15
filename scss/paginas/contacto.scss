@@ -1,17 +1,20 @@
 #contact{
     background-color:$color-background-secondary;
     padding: 0 108px;
-    display:flex;
-    align-items: center;
+    @include flexbox (none, center);
     flex-direction: row;
     height: 800px;
     width:100%;
     box-sizing: border-box;
+
+    @include media-query-tablet{
+        padding: 56px 60px;
+        justify-content: center;
+    }
+
     @include media-query-mobile{
         margin-top: 24px;
         flex-direction: column;
-        justify-content: center;        
-        height: auto;
         padding: 40px 16px;
         height: 100%;
     }
@@ -44,6 +47,7 @@
 		&:hover {
 			opacity: 0.7;
 		}
+
         @include media-query-mobile{
             display: none;
         }

@@ -1,5 +1,10 @@
 footer {
     padding: 40px 108px;
+
+    @include media-query-tablet{
+        padding: 40px 60px;
+    }
+
     @include media-query-mobile{
         padding: 40px 16px;
     }
@@ -16,10 +21,15 @@ footer {
         h4 {
             margin-bottom: 8px;
         }
+
+        @include media-query-tablet{
+            @include flexbox(space-between,none);          
+          }
+
         @include media-query-mobile{
         @include flexbox(none, flex-start);   
           flex-direction: column;  
-        }   
+        }  
     }
 
     .links-container {
@@ -46,6 +56,12 @@ footer {
     .logo {
         width: 95px;
         height: 40px;
+
+        @include media-query-tablet{
+            width: 95px;
+            height: 40px; 
+        }
+
         @include media-query-mobile{
             width: 55px; 
             height: 20px;  

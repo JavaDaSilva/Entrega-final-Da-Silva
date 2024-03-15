@@ -1,10 +1,16 @@
-// Hero
 #hero{
     background-color: $color-background-primary;
     position: relative;
 	@include flexbox(none, center);
     padding: 0 5%;    
     gap: 24px;
+
+	@include media-query-tablet{
+		display: flex;
+        padding: 56px 60px;
+        gap: 24px;
+        margin-top: 40px;
+	}
 
 	@include media-query-mobile{
 		display: flex;
@@ -24,15 +30,15 @@
 		transition: opacity 0.2s ease;
 
 		&:hover {
-			opacity: 0.7;
+			opacity: 0.5;
 		}
 		
 		@include media-query-mobile {
-			top: 88;
-			left: 0;
+			top: 80;
+			left: 2;
 			width: 100%;
 			height: 100%; 	
-		}
+		}	
 	} 
 
 	.hero-content{
@@ -45,10 +51,19 @@
 			padding-right: 0;
 		}
 
+		@include media-query-tablet{
+			padding-right: 0;
+		}
+
 		.title-index{
 			margin-bottom: 24px;
+
+			@include media-query-tablet{
+				margin-top: 24px;
+			}
 		}
 	}
+
 	.hero-image{
 		width: 28%;
 		position: relative;
@@ -68,22 +83,28 @@
 				}
 				100% {
 				  transform: translateY(0);
-				}
-			  
+				} 
 			}
 		}
 		@include media-query-mobile{
 			display: none;
 		}
+
+		@include media-query-tablet{
+			display: none;
+		}
 	}	
 }
 
-// Section mis servicios
 #servicesSection {
 	background-color: $color-background-primary;
 	color: $color-tipography;
 	text-align: center;
 	padding: 56px 108px;
+
+	@include media-query-tablet{
+		padding: 56px 60px;
+	}
 
     @include media-query-mobile {
 		text-align: center;
@@ -96,7 +117,6 @@
 			margin-bottom: 32px;
 		}	
 	}
-
 
 	h2 {
 		line-height: 48px;
@@ -138,6 +158,9 @@
 			box-shadow: 0 0 10px $color-hover;
 			transform: translateY(-3%);
 		}
+		@include media-query-tablet{
+			height: 100px;
+		}
 
 		@include media-query-mobile{
 			width: 90%;
@@ -178,14 +201,20 @@
 		&:hover {
 			background-color: $color-background-secondary;
 		}
-	}
-	
+		
+		@include media-query-tablet{
+			margin-top: 16px;
+		}
+	}	
 }
-// Section úiltimo proyecto
+
 #lastProject{
-    grid-area: lastProject;
     background: $color-background-secondary;
     padding: 56px 108px;
+
+	@include media-query-tablet{
+		padding: 56px 60px;
+	}
 
 	@include media-query-mobile{
 		padding: 40px 16px;
@@ -210,5 +239,4 @@
 			gap: 16px;
 		}
 	}
-
 }

@@ -55,6 +55,99 @@ header {
         font-weight: 500;
     }
 
+    @include media-query-tablet{
+        .menu-desktop{
+            display: none;
+        }
+
+        .menu-mobile {
+            display: block;
+            @include flexbox(space-between, center);
+            border-bottom: 1px solid $color-border;
+            background-color: $color-background-primary;
+            padding: 16px 60px;
+            width: 100%;
+            box-sizing: border-box;
+            position: fixed;
+            z-index: 1000;
+
+            .primary-button-mobile {
+                font-size: 16px;
+                font-family: $fontworksans;
+                color: $color-tipography;
+                background-color:$color-primary;
+                padding: 8px 32px;
+                border-radius: 4px;
+                height: 40px;
+                width: 160px;
+                border: none;
+            }
+
+            #menuToggle {
+                display: none;
+            }
+
+            #menuToggle:checked + .hamburguer-icon + .navbar-mobile {
+                display: block;
+            }
+    
+            .hamburguer-icon {
+                display: block;
+                color: $color-tipography;
+                font-size: 32px;
+            }
+
+            .navbar-mobile {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                background-color: $color-background-primary;
+                margin-top: 80px;
+                z-index: 100;
+                box-sizing: border-box;
+                position: fixed;
+                height: 100%;
+
+                ul {
+                    list-style: none;
+                    padding-left: 0;
+                }
+
+                li {
+                    margin-bottom: 16px;
+                    padding: 16px;
+                }
+
+                a {
+                    color:$color-tipography;
+                    text-decoration: none;
+                    font-family: $fontworksans;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                }
+
+                #listaNavMobile {
+                    @include flexbox(none, center);
+                    flex-direction: column;
+                    align-items: center;
+                    list-style: none;
+                    padding: 0;
+                    margin-top: 0px;
+                }
+
+                .container-button {
+                    @include flexbox(none, center);
+                    justify-content: center;
+                }
+        
+            }
+        }   
+    }
+
     @include media-query-mobile {
         .menu-desktop {
             display: none;
@@ -139,127 +232,24 @@ header {
             li {
                 margin-bottom: 16px;
                 padding: 16px;
-        }
+            }
 
-        a {
-            color:$color-tipography;
-            text-decoration: none;
-            font-family: $fontworksans;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-        }
-
-        }
-
-        .navbar {
-            display: none;
-        }
-
-        header .primary-button {
-            display: none;
-        }
-    }
-
-    @include media-query-tablet {
-        .menu-desktop {
-            display: none;
-        }
-
-        .menu-mobile {
-            display: block;
-            @include flexbox(space-between, center);
-            border-bottom: 1px solid $color-border;
-            background-color: $color-background-primary;
-            padding: 8px 16px;
-            width: 100%;
-            box-sizing: border-box;
-            position: fixed;
-            z-index: 1000;
-
-            .primary-button-mobile {
-                font-size: 16px;
+            a {
+                color:$color-tipography;
+                text-decoration: none;
                 font-family: $fontworksans;
-                color: $color-tipography;
-                background-color:$color-primary;
-                padding: 8px 32px;
-                border-radius: 4px;
-                height: 40px;
-                width: 160px;
-                border: none;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
             }
         }
 
-        #menuToggle {
-            display: none;
-        }
-
-        .hamburguer-icon {
-            display: block;
-            color: $color-tipography;
-            font-size: 32px;
-        }
-
-        #menuToggle:checked + .hamburguer-icon + .navbar-mobile {
-            display: block;
-        }
-
-        .navbar-mobile {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: auto;
-            background-color: $color-background-primary;
-            margin-top: 59px;
-            z-index: 100;
-            box-sizing: border-box;
-            position: fixed;
-            height: 100vh;
-        }
-
-        #listaNavMobile {
-            @include flexbox(none, center);
-            flex-direction: column;
-            align-items: center;
-            list-style: none;
-            padding: 0;
-            margin-top: 16px;
-        }
-
-        .container-button {
-            @include flexbox(none, center);
-            justify-content: center;
-        }
-
-        .navbar-mobile ul {
-            list-style: none;
-            padding-left: 0;
-
-            li {
-                margin-bottom: 16px;
-                padding: 16px;
-        }
-
-        a {
-            color:$color-tipography;
-            text-decoration: none;
-            font-family: $fontworksans;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-        }
-
-        }
-
         .navbar {
             display: none;
         }
 
-        header .primary-button {
+        .primary-button {
             display: none;
         }
-    }
-
+    }   
 }
