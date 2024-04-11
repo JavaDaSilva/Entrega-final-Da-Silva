@@ -860,6 +860,11 @@ header nav a {
   height: 800px;
   overflow: hidden;
 }
+@media (max-width: 480px) {
+  #contact .right-content {
+    display: none;
+  }
+}
 #contact figure {
   transform: rotate(90deg);
   position: relative;
@@ -904,6 +909,11 @@ header nav a {
 .container-fluid {
   background-color: #272727;
   padding: 72px 108px;
+}
+@media (max-width: 480px) {
+  .container-fluid {
+    padding: 40px 16px;
+  }
 }
 .container-fluid .card {
   background-color: #272727;

@@ -35,6 +35,10 @@
         width: 50%;
         height:800px;
         overflow: hidden;
+
+        @include media-query-mobile{
+            display: none;
+        } 
     }
 
     figure{

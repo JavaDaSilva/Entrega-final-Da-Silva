@@ -1,6 +1,10 @@
 .container-fluid{
     background-color: $color-background-secondary;
     padding: 72px 108px;
+    
+    @include media-query-mobile{
+        padding: 40px 16px;
+    }
 
     .card{
         background-color: $color-background-secondary;
