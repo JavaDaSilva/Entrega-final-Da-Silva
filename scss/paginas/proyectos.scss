@@ -10,6 +10,9 @@
         background-color: $color-background-secondary;
         border-color: $color-border;
         border-radius: 18px;
+        .card-title{
+            color: $color-tipography;
+        }
     }
 
     .btn-primary{

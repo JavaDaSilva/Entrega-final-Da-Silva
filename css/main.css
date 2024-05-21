@@ -920,6 +920,9 @@ header nav a {
   border-color: #535353;
   border-radius: 18px;
 }
+.container-fluid .card .card-title {
+  color: #f1f1f1;
+}
 .container-fluid .btn-primary {
   font-size: 16px;
   font-family: "Work Sans", sans-serif;
